@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rin ✧</title>
+        <link rel="icon" href="../icons/logo.ico">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/project.css">
+        <script src="../js/script.js" defer></script>
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Main</a></li>
+                    <li><a href="./about.html" >About</a></li>
+                    <li><a href="./project.html" aria-current="page">Project</a></li>
+                    <li><button id="contactBtn" type="button">Contact</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Projects</h1>
+            <p>New projects will appear here in the future. Stay tuned for updates.</p>
+        </main>
+
+        <dialog id="contactWin">
+            <button type="button" id="contactClose" aria-label="Close dialog">x</button>
+            
+            <h2 id="contactTitle">Message</h2>
+            <form action="https://formspree.io/f/mwvejgqo" method="POST">
+                <input id="emailInput" type="email" name="email" placeholder="Email:" required/>
+                <textarea name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </dialog>
+
+        <footer>
+            <a id="telegram" href="https://t.me/rin_lun">Telegram |</a>
+            <a id="github" href="https://github.com/rin-lun">GitHub</a>
+        </footer>
+    </body>
+</html>
