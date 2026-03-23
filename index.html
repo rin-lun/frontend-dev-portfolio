@@ -3,46 +3,242 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rin ✧</title>
-        <link rel="icon" href="./icons/logo.ico">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/main.css">
-        <script src="./js/script.js" defer></script>
+        <title>Rin ✧ Front-End developer</title>
+        <!-- <link rel="icon" href=""> -->
+        <!-- <link rel="stylesheet" href="./css/style.css"> -->
+        <!-- <link rel="stylesheet" href="./css/main.css"> -->
+        <!-- <script src="./script.js" defer></script> -->
     </head>
-    
+
     <body>
         <header>
             <nav>
+                <div>
+                    <img src="" alt="">
+                    <p>RIN-LUN.DEV</p>
+                </div>
+
                 <ul>
-                    <li><a href="./index.html">Main</a></li>
-                    <li><a href="./html/about.html">About</a></li>
-                    <li><a href="./html/project.html">Project</a></li>
-                    <li><button id="contactBtn" type="button">Contact</button></li>
+                    <li><a href="#hero">HOME</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><button id="contactBtn" type="button">CONTACT</button></li>
                 </ul>
             </nav>
         </header>
 
-        <main>
-            <section id="hero">
-                <h1>Hi! I'm Rin</h1>
-                <h2>Front-end Developer</h2>
-            </section>
-        </main>
+        
+        <dialog>
+            <button type="button" aria-label="Close dialog">x</button>
+                
+                <h2><span>&lt;</span>GET IN TOUCH<span>/&gt;</span></h2>
+                <p>Have a project in mind or just want to say <span>hello</span>? Send me a message!</p>
+                
+                <form id="contactForm" action="https://formspree.io/f/mwvejgqo" method="POST" >
+                    <div>
+                        <label for="name">&gt NAME</label>
+                        <input type="text" name="name" placeholder="Your name" required/>
+                    </div>
+                    
+                    <div>
+                        <label for="email">&gt EMAIL</label>
+                        <input type="email" name="email" placeholder="your.email@example.com" required/>
+                    </div>
 
-        <dialog id="contactWin">
-            <button type="button" id="contactClose" aria-label="Close dialog">x</button>
-            
-            <h2 id="contactTitle">Message</h2>
-            <form id="contactForm" action="https://formspree.io/f/mwvejgqo" method="POST" >
-                <input id="emailInput" type="email" name="email" placeholder="Email:" required/>
-                <textarea name="message" required></textarea>
-                <button id="contactBtnSend" type="submit">Send</button>
-            </form>
+                    <div>
+                        <label for="subject">&gt SUBJECT</label>
+                        <input type="text" name="subject" placeholder="What's this about?" required/>
+                    </div>
+
+                    <div>
+                        <label for="message">&gt MESSAGE</label>
+                        <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    
+                    <button id="contactBtnSend" type="submit">
+                        <img src="" alt="">
+                        <span>Send message</span>
+                    </button>
+                </form>
         </dialog>
 
+
+        <main>
+            <section id="hero">
+                <h1>
+                    <span>FRONTEND</span>
+                    <span>DEVELOPER</span>
+                </h1>
+
+                <h2>Building <span>reliable interfaces</span> with clean code and <span>modern technologies</span></h2>
+
+                <a href="#projects">VIEW MY WORK</a>
+                <button>GET IN TOUCH</button>
+            </section>
+
+            <div></div>
+
+            <section id="projects">
+                <h2><span>FEATURED</span> PROJECTS</h2>
+                <p>Real projects showcasing <span>clean code</span> and modern development</p>
+
+                <div>
+                    <article>
+                        <figure>
+                            <img src="" alt="">
+                            <figcaption>Landing Page</figcaption>
+                        </figure>
+
+                        <p>Responsive landing page for a Ukrainian rock band with semantic HTML, CSS Grid/Flexbox, form
+                            validation, and optimized performance.</p>
+
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                        </ul>
+
+                        <a href=""><img src="">CODE</a>
+                        <a href=""><img src="">DEMO</a>
+                    </article>
+
+                    <article>
+                        <figure>
+                            <img src="" alt="">
+                            <figcaption>Frontend Developer Portfolio</figcaption>
+                        </figure>
+
+                        <p>Modern cyberpunk-themed portfolio built with React and Tailwind CSS, featuring smooth animations and responsive design.</p>
+
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                        </ul>
+
+                        <a href=""><img src="">CODE</a>
+                        <a href=""><img src="">DEMO</a>
+                    </article>
+                </div>
+            </section>
+
+            <div></div>
+
+            <section id="about">
+                <h2><span>ABOUT</span> <span>ME</span></h2>
+                <p>Building the <span>future</span>, one line at a time</p>
+
+                <div>
+                    <h3>&gt; Hi, I'm a <span>Frontend Developer</span></h3>
+
+                    <p>I've been developing frontend skills for about a year, focusing on creating reliable and maintainable
+                        interfaces. My priority isn't just implementing functionality, but <span>code cleanliness</span>,
+                        structure, and the predictability of the system's behavior.</p>
+                    <p>I have experience with key stages of UI development: from <span>semantic responsive</span> layout to
+                        implementing interactive JavaScript and React logic.</p>
+                    <p>I take a systematic approach to tasks: it’s important for me to understand how a system works “from
+                        the inside” before I begin implementing it. I pay close attention to details, work constructively
+                        with feedback, and am focused on sustainable growth.</p>
+                </div>
+
+                <div>
+                    <div>
+                        <img src="" alt="">
+                        <h3>Development</h3>
+                        <p>HTML5, CSS3, JavaScript (ES6+), React with hooks and component lifecycle</p>
+                    </div>
+
+                    <div>
+                        <img src="" alt="">
+                        <h3>UI Structure</h3>
+                        <p>Semantic responsive layout, visual hierarchy, typography principles</p>
+                    </div>
+
+                    <div>
+                        <img src="" alt="">
+                        <h3>Quality Focus</h3>
+                        <p>Code cleanliness, structure, and predictability of system behavior</p>
+                    </div>
+
+                    <div>
+                        <img src="" alt="">
+                        <h3>Growth Mindset</h3>
+                        <p>Systematic approach, constructive feedback, sustainable team growth</p>
+                    </div>
+                </div>
+
+
+                <div>
+                    <h2>&lt;<span>TECHNICAL SKILLS</span>/&gt;</h2>
+
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>Flexbox</li>
+                        <li>Git/GitHub</li>
+                        <li>Grid</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>
+                            <span>2</span>
+                            <span>projects</span>
+                        </li>
+                        <li>
+                            <span>1+</span>
+                            <span>Years Learning</span>
+                        </li>
+                        <li>
+                            <span>100%</span>
+                            <span>Dedication</span>
+                        </li>
+                        <li>
+                            <span>∞</span>
+                            <span>Growth</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
         <footer>
-            <a id="telegram" href="https://t.me/rin_lun">Telegram |</a>
-            <a id="github" href="https://github.com/rin-lun">GitHub</a>
+            <div>
+                <div>
+                    <h3>&lt;/&gt;RIN-LUN DEV</h3>
+                    <p>Building <span>reliable interfaces</span> with clean code and modern technologies.</p>
+                </div>
+
+                <div>
+                    <h3>QUICK LINKS</h3>
+                    <ul>
+                        <li><span>&gt;</span> HOME</li>
+                        <li><span>&gt;</span> PROJECTS</li>
+                        <li><span>&gt;</span> ABOUT</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>CONNECT</h3>
+                    <ul>
+                        <li><a href="https://github.com/rin-lun"><img src="" alt="GitGub"/></a></li>
+                        <li><a href=""><img src="" alt="LinkedIn"/></a></li>
+                        <li><a href="https://t.me/rin_lun"><img src="" alt="Telegram"/></a></li>
+                        <li><a href="mailto:rejsneririna969@gmail.com?subject=Project inquiry"><img src="" alt="Gmail"/></a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <p><span>©</span> 2026 RIN-LUN.DEV. All rights reserved.</p>
+                <p><span>&lt;</span>Built with <span>❤</span> and clean code<span>/&gt;</span></p>
+            </div>
         </footer>
     </body>
 </html>
