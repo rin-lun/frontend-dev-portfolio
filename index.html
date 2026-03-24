@@ -4,17 +4,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rin ✧ Front-End developer</title>
-        <!-- <link rel="icon" href=""> -->
-        <!-- <link rel="stylesheet" href="./css/style.css"> -->
-        <!-- <link rel="stylesheet" href="./css/main.css"> -->
-        <!-- <script src="./script.js" defer></script> -->
+        <link rel="icon" href="./website-icon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
     </head>
 
     <body>
         <header>
             <nav>
                 <div>
-                    <img src="" alt="">
+                    <svg 
+                        class="codeIcon"
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke-width="2" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                    >
+                        <path d="m18 16 4-4-4-4"/>
+                        <path d="m6 8-4 4 4 4"/>
+                        <path d="m14.5 4-5 16"/>
+                    </svg>
                     <p>RIN-LUN.DEV</p>
                 </div>
 
@@ -22,14 +33,14 @@
                     <li><a href="#hero">HOME</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
                     <li><a href="#about">ABOUT</a></li>
-                    <li><button id="contactBtn" type="button">CONTACT</button></li>
+                    <button id="contactBtn" type="button">CONTACT</button>
                 </ul>
             </nav>
         </header>
 
         
-        <dialog>
-            <button type="button" aria-label="Close dialog">x</button>
+        <dialog id="contactWin">
+            <button id="contactClose" type="button" aria-label="Close dialog">x</button>
                 
                 <h2><span>&lt;</span>GET IN TOUCH<span>/&gt;</span></h2>
                 <p>Have a project in mind or just want to say <span>hello</span>? Send me a message!</p>
@@ -56,7 +67,17 @@
                     </div>
                     
                     <button id="contactBtnSend" type="submit">
-                        <img src="" alt="">
+                        <svg 
+                            id="send-message-icon"
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke-width="2" 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round"
+                        >
+                            <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/>
+                            <path d="m21.854 2.147-10.94 10.939"/>
+                        </svg>
                         <span>Send message</span>
                     </button>
                 </form>
@@ -85,7 +106,7 @@
                 <div>
                     <article>
                         <figure>
-                            <img src="" alt="">
+                            <img src="./img/grim-grime-project.webp" alt="Image project Portfolio">
                             <figcaption>Landing Page</figcaption>
                         </figure>
 
@@ -98,13 +119,32 @@
                             <li>JavaScript</li>
                         </ul>
 
-                        <a href=""><img src="">CODE</a>
-                        <a href=""><img src="">DEMO</a>
+                        <a href="https://github.com/rin-lun/grim-and-grime-landing">
+                            <svg class="project-github-icons project-icons" viewBox="0 0 24 24">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                            CODE
+                        </a>
+                        <a href="https://rin-lun.github.io/grim-and-grime-landing/">
+                            <svg 
+                                class="external-link-icons project-icons"
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke-width="2" 
+                                stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                            >
+                                <path d="M15 3h6v6"/>
+                                <path d="M10 14 21 3"/>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            </svg>
+                            DEMO
+                        </a>
                     </article>
 
                     <article>
                         <figure>
-                            <img src="" alt="">
+                            <img src="./img/portfolioProject.webp" alt="Image project Portfolio">
                             <figcaption>Frontend Developer Portfolio</figcaption>
                         </figure>
 
@@ -116,8 +156,27 @@
                             <li>JavaScript</li>
                         </ul>
 
-                        <a href=""><img src="">CODE</a>
-                        <a href=""><img src="">DEMO</a>
+                        <a href="https://github.com/rin-lun/frontend-dev-portfolio">
+                            <svg class="project-github-icons project-icons" viewBox="0 0 24 24">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                            CODE
+                        </a>
+                        <a href="https://rin-lun.github.io/frontend-dev-portfolio/">
+                            <svg 
+                                class="external-link-icons project-icons"
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke-width="2" 
+                                stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                            >
+                                <path d="M15 3h6v6"/>
+                                <path d="M10 14 21 3"/>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            </svg>
+                            DEMO
+                        </a>
                     </article>
                 </div>
             </section>
@@ -143,27 +202,82 @@
 
                 <div>
                     <div>
-                        <img src="" alt="">
-                        <h3>Development</h3>
+                        <svg
+                            id="about-code-icon"
+                            class="about-icons"
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke-width="2" 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                        >
+                            <path d="m16 18 6-6-6-6"/>
+                            <path d="m8 6-6 6 6 6"/>
+                        </svg>
+                        <h3>Frontend Development</h3>
+
                         <p>HTML5, CSS3, JavaScript (ES6+), React with hooks and component lifecycle</p>
                     </div>
 
                     <div>
-                        <img src="" alt="">
-                        <h3>UI Structure</h3>
-                        <p>Semantic responsive layout, visual hierarchy, typography principles</p>
+                        <svg
+                            id="pallete-icon"
+                            class="about-icons"
+                            viewBox="0 0 24 24" 
+                            fill="none"
+                            stroke-width="2" 
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"/>
+                            <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/>
+                            <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/>
+                            <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/>
+                            <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/>
+                        </svg>
+                        <h3>UI/UX Principles</h3>
+
+                        <p>Visual hierarchy, typography, responsive design, and accessibility</p>
                     </div>
 
                     <div>
-                        <img src="" alt="">
-                        <h3>Quality Focus</h3>
-                        <p>Code cleanliness, structure, and predictability of system behavior</p>
+                        <svg 
+                            id="rocket-icon"
+                            class="about-icons"
+                            viewBox="0 0 24 24" 
+                            fill="none"  
+                            stroke-width="2" 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round"
+                        >
+                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+                            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/>
+                            <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/>
+                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/>
+                        </svg>
+                        <h3>Clean Code</h3>
+
+                        <p>Focus on code structure, maintainability, and predictable system behavior</p>
                     </div>
 
                     <div>
-                        <img src="" alt="">
+                        <svg 
+                            id="users-icon"
+                            class="about-icons"
+                            viewBox="0 0 24 24" 
+                            fill="none" stroke="#c27aff" 
+                            stroke-width="2" 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                        >
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                            <path d="M16 3.128a4 4 0 0 1 0 7.744"/>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                            <circle cx="9" cy="7" r="4"/>
+                        </svg>
                         <h3>Growth Mindset</h3>
-                        <p>Systematic approach, constructive feedback, sustainable team growth</p>
+
+                        <p>Systematic approach, attention to detail, and constructive with feedback</p>
                     </div>
                 </div>
 
@@ -210,7 +324,20 @@
         <footer>
             <div>
                 <div>
-                    <h3>&lt;/&gt;RIN-LUN DEV</h3>
+                    <svg 
+                        class="codeIcon"
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke-width="2" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                    >
+                        <path d="m18 16 4-4-4-4"/>
+                        <path d="m6 8-4 4 4 4"/>
+                        <path d="m14.5 4-5 16"/>
+                    </svg>
+                    <h3>RIN-LUN DEV</h3>
+
                     <p>Building <span>reliable interfaces</span> with clean code and modern technologies.</p>
                 </div>
 
@@ -226,10 +353,42 @@
                 <div>
                     <h3>CONNECT</h3>
                     <ul>
-                        <li><a href="https://github.com/rin-lun"><img src="" alt="GitGub"/></a></li>
-                        <li><a href=""><img src="" alt="LinkedIn"/></a></li>
-                        <li><a href="https://t.me/rin_lun"><img src="" alt="Telegram"/></a></li>
-                        <li><a href="mailto:rejsneririna969@gmail.com?subject=Project inquiry"><img src="" alt="Gmail"/></a></li>
+                        <li>
+                            <a href="https://github.com/rin-lun">
+                                <svg class="contact-icons" viewBox="0 0 24 24">
+                                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/rin-l-5998023a1/">
+                                <svg class="contact-icons" viewBox="0 0 382 382" xml:space="preserve">
+                                    <path  --darkreader-inline-fill: var(--darkreader-text-0077b7, );" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z" data-darkreader-inline-fill=""/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/rin_lun">
+                                <svg id="telegram-icon" class="contact-icons" role="img" viewBox="0 0 24 24">
+                                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:rejsneririna969@gmail.com?subject=Project inquiry">
+                                <svg 
+                                    id="mail-icon"
+                                    viewBox="0 0 24 24" 
+                                    fill="none" 
+                                    stroke-width="2" 
+                                    stroke-linecap="round" 
+                                    stroke-linejoin="round" 
+                                >
+                                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/>
+                                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                </svg>
+                            </a>
+                        </li>
 
                     </ul>
                 </div>

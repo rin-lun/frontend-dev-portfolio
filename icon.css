@@ -1,0 +1,57 @@
+.codeIcon {
+    width: 24px;
+    height: 24px;
+    stroke: #00ffff;
+}
+
+
+#send-message-icon {
+    width: 20px;
+    height: 20px;
+    stroke: #000000;
+}
+
+
+.project-icons {
+    width: 20px;
+    height: 20px;
+}
+.project-github-icons {
+    fill: #00ffff;
+}
+
+.external-link-icons {
+    stroke: #ffffff;
+}
+
+
+.about-icons {
+    width: 32px;
+    height: 32px;
+}
+
+#about-code-icon, #users-icon {
+    stroke: #00ffff;
+}
+
+#pallete-icon {
+    stroke: #ffffff;
+}
+
+#rocket-icon {
+    stroke: #c27aff;
+}
+
+
+.contact-icons, #mail-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-icons {
+    fill: #ffffff;
+}
+
+#mail-icon {
+    stroke: #ffffff;
+}
