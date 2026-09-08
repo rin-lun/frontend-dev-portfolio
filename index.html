@@ -14,27 +14,29 @@
         <header>
             <nav>
                 <div>
-                    <svg 
-                        class="codeIcon"
-                        viewBox="0 0 24 24" 
-                        fill="none" 
-                        stroke-width="2" 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round" 
-                    >
-                        <path d="m18 16 4-4-4-4"/>
-                        <path d="m6 8-4 4 4 4"/>
-                        <path d="m14.5 4-5 16"/>
-                    </svg>
-                    <p>RIN-LUN.DEV</p>
-                </div>
+                    <div>
+                        <svg 
+                            class="codeIcon"
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke-width="2" 
+                            stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                        >
+                            <path d="m18 16 4-4-4-4"/>
+                            <path d="m6 8-4 4 4 4"/>
+                            <path d="m14.5 4-5 16"/>
+                        </svg>
+                        <p class="">RIN-LUN.DEV</p>
+                    </div>
 
-                <ul>
-                    <li><a href="#hero">HOME</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <button id="contactBtn" type="button">CONTACT</button>
-                </ul>
+                    <ul>
+                        <li><a href="#hero">HOME</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <button id="contactBtn" class="btn" type="button">CONTACT</button>
+                    </ul>
+                </div>
             </nav>
         </header>
 
@@ -87,14 +89,18 @@
         <main>
             <section id="hero">
                 <h1>
-                    <span>FRONTEND</span>
-                    <span>DEVELOPER</span>
+                    <span class="hero__title-line hero__title-line--cyan">FRONTEND</span>
+                    <span class="hero__title-line hero__title-line--magenta">DEVELOPER</span>
                 </h1>
+
+                <div class="section__divider"></div>
 
                 <h2>Building <span>reliable interfaces</span> with clean code and <span>modern technologies</span></h2>
 
-                <a href="#projects">VIEW MY WORK</a>
-                <button>GET IN TOUCH</button>
+                <div class="hero__action">
+                    <a href="#projects" class="btn">VIEW MY WORK</a>
+                    <button>GET IN TOUCH</button>
+                </div>
             </section>
 
             <div></div>
@@ -336,7 +342,7 @@
                         <path d="m6 8-4 4 4 4"/>
                         <path d="m14.5 4-5 16"/>
                     </svg>
-                    <h3>RIN-LUN DEV</h3>
+                    <h3 class="">RIN-LUN DEV</h3>
 
                     <p>Building <span>reliable interfaces</span> with clean code and modern technologies.</p>
                 </div>

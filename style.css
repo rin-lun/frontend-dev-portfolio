@@ -9,15 +9,39 @@
 body { 
     background-color: #000000;
     color: #ffffff;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     line-height: 1.6;
+    
+}
+
+.font-display {
+    font-family: 'Orbitron', sans-serif;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}  
