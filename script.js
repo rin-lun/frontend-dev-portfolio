@@ -1,14 +1,16 @@
-const contactBtn = document.getElementById("contactBtn");
+const contactBtns = document.getElementsByClassName("contactBtns");
 const contactWin = document.getElementById("contactWin");
 const contactClose = document.getElementById("contactClose");
 const contactForm = document.getElementById("contactForm");
 
-contactBtn.addEventListener("click", () => {
-	if (contactWin.open) {
-		contactWin.close();
-	} else {
-		contactWin.show();
-	}
+Array.from(contactBtns).forEach((btn) => {
+	btn.addEventListener("click", () => {
+		if (contactWin.open) {
+			contactWin.close();
+		} else {
+			contactWin.show();
+		}
+	});
 });
 
 contactClose.addEventListener("click", () => contactWin.close());

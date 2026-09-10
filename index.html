@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="./icon.css">
         <link rel="stylesheet" href="./nav.css">
+        <link rel="stylesheet" href="./hero.css">
         
         <script src="./script.js" defer></script>
     </head>
@@ -37,7 +38,7 @@
                         <li><a class="nav__link" href="#hero">HOME</a></li>
                         <li><a class="nav__link" href="#projects">PROJECTS</a></li>
                         <li><a class="nav__link" href="#about">ABOUT</a></li>
-                        <button id="contactBtn" class="btn btn--primary btn--sm" type="button">CONTACT</button>
+                        <button class=" contactBtns btn btn--primary btn--sm" type="button">CONTACT</button>
                     </ul>
                 </div>
             </nav>
@@ -90,23 +91,27 @@
 
 
         <main>
-            <section id="hero">
-                <h1>
+            <section id="hero" class="hero">
+                <h1 class="hero__title font-display">
                     <span class="hero__title-line hero__title-line--cyan">FRONTEND</span>
                     <span class="hero__title-line hero__title-line--magenta">DEVELOPER</span>
                 </h1>
 
-                <div class="section__divider"></div>
+                <div class="section-divider"></div>
 
-                <h2>Building <span>reliable interfaces</span> with clean code and <span>modern technologies</span></h2>
+                <h2 class="hero__subtitle">Building <span class="text-cyan">reliable interfaces</span> with clean code and <span class="text-purple">modern technologies</span></h2>
 
-                <div class="hero__action">
-                    <a href="#projects" class="btn">VIEW MY WORK</a>
-                    <button>GET IN TOUCH</button>
+                <div class="hero__actions">
+                    <a href="#projects" class="btn btn--primary">VIEW MY WORK</a>
+                    <button class="contactBtns btn btn--secondary">GET IN TOUCH</button>
                 </div>
             </section>
 
-            <div></div>
+            <div class="hero__dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
 
             <section id="projects">
                 <h2><span>FEATURED</span> PROJECTS</h2>
