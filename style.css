@@ -36,3 +36,34 @@ button {
     background: none;
     cursor: pointer;
 }
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn--sm {
+    padding: 10px 20px;
+}
+
+.btn--primary {
+    background-color: #00ffff;
+    color: #000000;
+    box-shadow: 0 0 16px rgba(0, 255, 255, 0.35);
+}
+
+.btn--secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+}
