@@ -7,14 +7,17 @@
         <link rel="icon" href="./website-icon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./icon.css">
+        <link rel="stylesheet" href="./nav.css">
+        
         <script src="./script.js" defer></script>
     </head>
 
     <body>
-        <header>
+        <header class="header">
             <nav>
-                <div>
-                    <div>
+                <div class="nav__inner">
+                    <div class="nav__brand">
                         <svg 
                             class="codeIcon"
                             viewBox="0 0 24 24" 
@@ -27,14 +30,14 @@
                             <path d="m6 8-4 4 4 4"/>
                             <path d="m14.5 4-5 16"/>
                         </svg>
-                        <p class="">RIN-LUN.DEV</p>
+                        <p class="logo-text">RIN-LUN.DEV</p>
                     </div>
 
-                    <ul>
-                        <li><a href="#hero">HOME</a></li>
-                        <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <button id="contactBtn" class="btn" type="button">CONTACT</button>
+                    <ul class="nav__menu">
+                        <li><a class="nav__link" href="#hero">HOME</a></li>
+                        <li><a class="nav__link" href="#projects">PROJECTS</a></li>
+                        <li><a class="nav__link" href="#about">ABOUT</a></li>
+                        <button id="contactBtn" class="btn btn--primary btn--sm" type="button">CONTACT</button>
                     </ul>
                 </div>
             </nav>
