@@ -13,7 +13,7 @@
 }
 
 .hero__title-line {
-    display: block;
+    display: inline;
 }
 
 .hero__title-line--cyan {
@@ -27,7 +27,7 @@
 }
 
 .section-divider {
-    width: 400px;
+    width: 600px;
     max-width: 70%;
     height: 1px;
     margin: 32px auto;
