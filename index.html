@@ -92,26 +92,32 @@
 
         <main>
             <section id="hero" class="hero">
-                <h1 class="hero__title font-display">
-                    <span class="hero__title-line hero__title-line--cyan">IT</span>
-                    <span class="hero__title-line hero__title-line--magenta"> PERSON</span>
-                </h1>
+                <span class="hero__static-block hero__static-block--cyan" aria-hidden="true"></span>
+                <span class="hero__static-block hero__static-block--magenta" aria-hidden="true"></span>
 
-                <div class="section-divider"></div>
+                <div class="hero__content">
+                    <h1 class="hero__title font-display" data-text="IT PERSON">
+                        <span class="hero__title-line hero__title-line--cyan">IT</span>
+                        <span class="hero__title-line hero__title-line--magenta">PERSON</span>
+                    </h1>
 
-                <h2 class="hero__subtitle">Building <span class="text-cyan">reliable interfaces</span> with clean code and <span class="text-purple">modern technologies</span></h2>
+                    <div class="section-divider"></div>
 
-                <div class="hero__actions">
-                    <a href="#projects" class="btn btn--primary">VIEW MY WORK</a>
-                    <button class="contactBtns btn btn--secondary">GET IN TOUCH</button>
+                    <h2 class="hero__subtitle">Building <span class="text-cyan">reliable interfaces</span> with clean code and <span class="text-purple">modern technologies</span></h2>
+
+                    <div class="hero__actions">
+                        <a href="#projects" class="btn btn--primary" data-text="VIEW MY WORK">VIEW MY WORK</a>
+                        <button class="contactBtns btn btn--secondary" data-text="GET IN TOUCH">GET IN TOUCH</button>
+                    </div>
+                
+
+                    <div class="hero__dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
                 </div>
             </section>
-
-            <div class="hero__dots">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
 
             <section id="projects">
                 <h2><span>FEATURED</span> PROJECTS</h2>
