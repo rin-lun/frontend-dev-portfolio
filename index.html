@@ -38,7 +38,7 @@
                         <li><a class="nav__link" href="#hero">HOME</a></li>
                         <li><a class="nav__link" href="#projects">PROJECTS</a></li>
                         <li><a class="nav__link" href="#about">ABOUT</a></li>
-                        <button class=" contactBtns btn btn--primary btn--sm" type="button">CONTACT</button>
+                        <button class="contactBtns btn  btn--sm" type="button" data-text="CONTACT">CONTACT</button>
                     </ul>
                 </div>
             </nav>
@@ -97,19 +97,18 @@
 
                 <div class="hero__content">
                     <h1 class="hero__title font-display" data-text="IT PERSON">
-                        <span class="hero__title-line hero__title-line--cyan">IT</span>
+                        <span class="hero__title-line hero__title-line--cyan ">IT</span>
                         <span class="hero__title-line hero__title-line--magenta">PERSON</span>
                     </h1>
 
                     <div class="section-divider"></div>
 
-                    <h2 class="hero__subtitle">Building <span class="text-cyan">reliable interfaces</span> with clean code and <span class="text-purple">modern technologies</span></h2>
+                    <h2 class="hero__subtitle">Building <span class="text-cyan">digital products</span> with clean code and <span class="text-purple">modern technologies</span></h2>
 
                     <div class="hero__actions">
                         <a href="#projects" class="btn btn--primary" data-text="VIEW MY WORK">VIEW MY WORK</a>
                         <button class="contactBtns btn btn--secondary" data-text="GET IN TOUCH">GET IN TOUCH</button>
                     </div>
-                
 
                     <div class="hero__dots">
                         <span class="dot"></span>
@@ -119,7 +118,16 @@
                 </div>
             </section>
 
-            <section id="projects">
+            <section class="status-section">
+                <canvas id="matrix"></canvas>
+                <div class="status">
+                    <span class="status-indicator"></span>
+                    <p class="status-text">&gt;SYSTEM STATUS: IN DEVELOPMENT</p>
+                    <span class="dots-animated"></span>
+                </div>
+            </section>
+
+            <!-- <section id="projects">
                 <h2><span>FEATURED</span> PROJECTS</h2>
                 <p>Real projects showcasing <span>clean code</span> and modern development</p>
 
@@ -418,6 +426,6 @@
                 <p><span>©</span> 2026 RIN-LUN.DEV. All rights reserved.</p>
                 <p><span>&lt;</span>Built with <span>❤</span> and clean code<span>/&gt;</span></p>
             </div>
-        </footer>
+        </footer> -->
     </body>
 </html>
