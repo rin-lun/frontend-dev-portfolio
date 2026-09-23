@@ -26,6 +26,23 @@
     font-weight: 500;
     color: #00ffff;
     letter-spacing: 0.5px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+.terminal-cursor {
+    display: inline-block;
+    margin-left: 2px;
+    animation: cursor-blink 1s steps(1, end) infinite;
+}
+
+body.tab-inactive .terminal-cursor {
+    animation-play-state: paused;
+    opacity: 1;
+}
+
+@keyframes cursor-blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
 }
 
 .nav__menu {
@@ -34,12 +51,47 @@
     gap: 32px;
 }
 
-.nav__link {
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-    transition: color 0.2s ease;
+.nav__links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
-.nav__link:hover {
+.nav__link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.nav__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+}
+
+.nav__link:hover::after {
+    transform: scaleX(1);
+}
+
+.nav__link--home:hover {
     color: #00ffff;
+}
+
+.nav__link--projects:hover {
+    color: #ff2fe0;
+}
+
+.nav__link--about:hover {
+    color: #c27aff;
 }

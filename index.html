@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rin ✧ Front-End developer</title>
+        <title>Rin ✧ Developer</title>
         <link rel="icon" href="./website-icon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
@@ -16,30 +16,20 @@
 
     <body>
         <header class="header">
-            <nav>
+            <nav class="nav">
                 <div class="nav__inner">
                     <div class="nav__brand">
-                        <svg 
-                            class="codeIcon"
-                            viewBox="0 0 24 24" 
-                            fill="none" 
-                            stroke-width="2" 
-                            stroke-linecap="round" 
-                            stroke-linejoin="round" 
-                        >
-                            <path d="m18 16 4-4-4-4"/>
-                            <path d="m6 8-4 4 4 4"/>
-                            <path d="m14.5 4-5 16"/>
-                        </svg>
-                        <p class="logo-text">RIN-LUN.DEV</p>
+                        <p class="logo-text" id="logoLine">C:\Users\Rin_lun\portfolio&gt;<span class="terminal-cursor">_</span></p>
                     </div>
 
-                    <ul class="nav__menu">
-                        <li><a class="nav__link" href="#hero">HOME</a></li>
-                        <li><a class="nav__link" href="#projects">PROJECTS</a></li>
-                        <li><a class="nav__link" href="#about">ABOUT</a></li>
-                        <button class="contactBtns btn  btn--sm" type="button" data-text="CONTACT">CONTACT</button>
-                    </ul>
+                    <div class="nav__menu">
+                        <ul class="nav__links">
+                            <li><a class="nav__link nav__link--home" href="#hero">HOME</a></li>
+                            <li><a class="nav__link nav__link--projects" href="#projects">PROJECTS</a></li>
+                            <li><a class="nav__link nav__link--about" href="#about">ABOUT</a></li>
+                        </ul>
+                        <button class="contactBtns btn btn--fill btn--sm" type="button" data-text="CONTACT">CONTACT</button>
+                    </div>
                 </div>
             </nav>
         </header>
