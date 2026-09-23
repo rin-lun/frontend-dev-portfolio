@@ -8,7 +8,7 @@ Array.from(contactBtns).forEach((btn) => {
 		if (contactWin.open) {
 			contactWin.close();
 		} else {
-			contactWin.show();
+			contactWin.showModal();
 		}
 	});
 });
