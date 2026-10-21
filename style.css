@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+html { scroll-behavior: smooth; }
+
 body { 
     background-color: #000000;
     color: #ffffff;
@@ -138,9 +140,6 @@ button {
 
 
 /* TEMPORARY PLUG */
-#projects, #about, footer {
-    display: none !important;
-}
 
 .status-section {
     position: relative;
