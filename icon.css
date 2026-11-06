@@ -5,9 +5,16 @@
 }
 
 
+#cancel-icon {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    transition: transform 0.25s ease;
+}
+
 #send-message-icon {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     stroke: #000000;
 }
 
