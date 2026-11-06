@@ -86,7 +86,7 @@
     padding: 12px 14px;
     border-radius: 4px;
     outline: none;
-    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    transition: border-color 0.25s ease;
     white-space: pre-wrap;
     word-break: break-word;
 }
@@ -99,7 +99,6 @@
 #contactForm input:focus,
 #contactForm textarea:focus {
     border-color: #c27aff;
-    box-shadow: 0 0 12px rgba(0, 255, 255, 0.35);
 }
 
 #contactForm input::selection,
@@ -138,33 +137,35 @@
     overflow: hidden;
 }
 
-/* Стандартный глитч без смещений полей */
-#contactWin .btn::before,
-#contactWin .btn::after {
+/* Привязка глитча к текстовому span внутри кнопки для идеального покрытия текста */
+#contactWin .btn span {
+    position: relative;
+    display: inline-block;
+}
+
+#contactWin .btn span::before,
+#contactWin .btn span::after {
     content: attr(data-text);
     position: absolute;
     inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     opacity: 0;
     pointer-events: none;
 }
 
-#contactWin .btn::before {
+#contactWin .btn span::before {
     color: #00ffff;
     clip-path: inset(0 0 55% 0);
 }
 
-#contactWin .btn::after {
+#contactWin .btn span::after {
     color: #ff2fe0;
     clip-path: inset(55% 0 0 0);
 }
 
-#contactWin .btn:hover::before {
+#contactWin .btn:hover span::before {
     animation: btn-glitch-1 0.5s steps(2, end) 2;
 }
-#contactWin .btn:hover::after {
+#contactWin .btn:hover span::after {
     animation: btn-glitch-2 0.5s steps(2, end) 2;
 }
 
