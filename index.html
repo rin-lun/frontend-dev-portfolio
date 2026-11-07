@@ -49,27 +49,22 @@
                 
                 <form id="contactForm" action="https://formspree.io/f/mwvejgqo" method="POST" >
                     <div>
-                        <label for="name">&gt NAME</label>
+                        <label id="name" for="name">&gt NAME</label>
                         <input type="text" name="name" placeholder="Your name" required/>
                     </div>
                     
                     <div>
-                        <label for="email">&gt EMAIL</label>
+                        <label id="email" for="email">&gt EMAIL</label>
                         <input type="email" name="email" placeholder="your.email@example.com" required/>
                     </div>
 
                     <div>
-                        <label for="subject">&gt SUBJECT</label>
-                        <input type="text" name="subject" placeholder="What's this about?" required/>
-                    </div>
-
-                    <div>
-                        <label for="message">&gt MESSAGE</label>
+                        <label id="message" for="message">&gt MESSAGE</label>
                         <textarea name="message" placeholder="Tell me about your project..." required></textarea>
                     </div>
 
                     <div class="contact-actions">
-                        <button id="contactBtnClear" type="button" class="btn btn-clear-glitch">
+                        <button id="contactBtnClear" type="reset" class="btn btn-clear-glitch">
                             <svg 
                                 id="cancel-icon"
                                 viewBox="0 0 24 24" 
